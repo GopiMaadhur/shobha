@@ -3,11 +3,12 @@ import Hero from "@/components/Hero";
 import Cards from "@/components/Cards";
 import Feedback from "@/components/Feedback";
 import WhyChooseUs from "@/components/WhyChooseUs";
+import HeroSlider from "@/components/HeroSlider";
 
 export default function Home() {
   return (
     <>
-      <Hero />
+      <HeroSlider />
       <Cards />
       <WhyChooseUs />
       <Feedback />

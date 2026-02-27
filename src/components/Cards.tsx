@@ -7,9 +7,9 @@ export default function Cards() {
                     <div className="flex justify-between items-end mb-12">
                         <div>
                             <span className="uppercase text-xs tracking-widest text-[#4A7043]">Signature Experiences</span>
-                            <h2 className="heading-font text-5xl tracking-tight">Our Herbal Rituals</h2>
+                            <h2 className="heading-font text-5xl tracking-tight text-[#4A7043]">Our Herbal Rituals</h2>
                         </div>
-                        <a href="#" className="hidden md:flex items-center gap-3 text-sm font-medium group">
+                        <a href="#" className="hidden md:flex items-center gap-3 text-sm font-medium group text-[#4A7043]">
                             VIEW FULL MENU 
                             <span className="block w-8 h-px bg-[#4A7043] group-hover:w-12 transition-all"></span>
                         </a>
@@ -22,7 +22,7 @@ export default function Cards() {
                             <div className="p-8">
                                 <div className="flex justify-between">
                                     <div>
-                                        <div className="font-semibold text-xl">Ayurvedic Glow Facial</div>
+                                        <div className="font-semibold text-xl text-[#4A7043]">Ayurvedic Glow Facial</div>
                                         <div className="text-[#4A7043] text-sm">60 min • ₹2,800</div>
                                     </div>
                                     <div className="text-3xl">🌿</div>
@@ -41,7 +41,7 @@ export default function Cards() {
                             <div className="p-8">
                                 <div className="flex justify-between">
                                     <div>
-                                        <div className="font-semibold text-xl">Herbal Hair Rebirth</div>
+                                        <div className="font-semibold text-xl text-[#4A7043]">Herbal Hair Rebirth</div>
                                         <div className="text-[#4A7043] text-sm">90 min • ₹3,500</div>
                                     </div>
                                     <div className="text-3xl">🌱</div>
@@ -60,7 +60,7 @@ export default function Cards() {
                             <div className="p-8">
                                 <div className="flex justify-between">
                                     <div>
-                                        <div className="font-semibold text-xl">Neem Body Detox</div>
+                                        <div className="font-semibold text-xl text-[#4A7043]">The Neem Body Detox</div>
                                         <div className="text-[#4A7043] text-sm">75 min • ₹4,200</div>
                                     </div>
                                     <div className="text-3xl">🍃</div>
@@ -79,7 +79,7 @@ export default function Cards() {
                             <div className="p-8">
                                 <div className="flex justify-between">
                                     <div>
-                                        <div className="font-semibold text-xl">Bridal Herbal Glow</div>
+                                        <div className="font-semibold text-xl text-[#4A7043]">Bridal Herbal Glow</div>
                                         <div className="text-[#4A7043] text-sm">120 min • ₹7,500</div>
                                     </div>
                                     <div className="text-3xl">💍</div>
