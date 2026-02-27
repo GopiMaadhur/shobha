@@ -18,7 +18,7 @@ export default function Cards() {
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                        {/* <!-- Card 1 -->  */}
                         <div className="bg-white rounded-3xl overflow-hidden card-hover">
-                            <img src="https://picsum.photos/id/201/600/400" alt="Herbal Facial" className="w-full h-64 object-cover" />
+                            <img src="/pngegg (2).png" alt="Herbal Facial" className="w-full h-64 object-cover" />
                             <div className="p-8">
                                 <div className="flex justify-between">
                                     <div>
@@ -37,7 +37,7 @@ export default function Cards() {
 
                         {/* <!-- Card 2 --> */}
                         <div className="bg-white rounded-3xl overflow-hidden card-hover">
-                            <img src="https://picsum.photos/id/237/600/400" alt="Hair Ritual" className="w-full h-64 object-cover" />
+                            <img src="/pngegg (3).png" alt="Hair Ritual" className="w-full h-64 object-cover" />
                             <div className="p-8">
                                 <div className="flex justify-between">
                                     <div>
@@ -56,7 +56,7 @@ export default function Cards() {
 
                         {/* <!-- Card 3 --> */}
                         <div className="bg-white rounded-3xl overflow-hidden card-hover">
-                            <img src="https://picsum.photos/id/870/600/400" alt="Body Detox" className="w-full h-64 object-cover" />
+                            <img src="/pngegg (4).png" alt="Body Detox" className="w-full h-64 object-cover" />
                             <div className="p-8">
                                 <div className="flex justify-between">
                                     <div>
@@ -75,7 +75,7 @@ export default function Cards() {
 
                         {/* <!-- Card 4 --> */}
                         <div className="bg-white rounded-3xl overflow-hidden card-hover">
-                            <img src="https://picsum.photos/id/1018/600/400" alt="Bridal" className="w-full h-64 object-cover" />
+                            <img src="/pngegg (5).png" alt="Bridal" className="w-full h-64 object-cover" />
                             <div className="p-8">
                                 <div className="flex justify-between">
                                     <div>
