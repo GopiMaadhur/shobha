@@ -1,6 +1,7 @@
 "use client"
 import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Menu, X, Phone } from 'lucide-react'
 
 export default function Navbar() {
@@ -11,10 +12,15 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="flex justify-between items-center h-20">
           
-          {/* Logo - Elegant Serif style like Blume */}
+          {/* Logo - Elegant Serif style like Blume
           <Link href="/" className="font-serif text-2xl tracking-tighter text-black">
             SHOBHA <span className="font-light italic text-gray-500">BEAUTY</span>
+          </Link> */}
+
+          <Link href="/">
+            <Image src="/logo.jpeg" alt="Shobha Beauty" width={190} height={40} className="object-contain" />
           </Link>
+          
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-10 items-center font-sans text-xs uppercase tracking-widest font-medium">
