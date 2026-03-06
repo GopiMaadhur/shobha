@@ -28,3 +28,38 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+/* White navigation arrows */
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: white !important;
+}
+
+/* Rectangle pagination - Override all Swiper defaults */
+
+.swiper-pagination-bullet {
+  width: 28px !important;
+  height: 4px !important;
+  border-radius: 0 !important;
+  background: #777 !important;
+  opacity: 1 !important;
+  margin: 0 6px !important;
+}
+
+/* Active slide indicator */
+
+.swiper-pagination-bullet-active {
+  background: #c69c6d !important;
+}
+
+/* Custom rect bullets */
+
+.swiper-pagination-bullet.swiper-rect {
+  background: #777 !important;
+}
+
+.swiper-pagination-bullet-active.swiper-rect {
+  background: #c69c6d !important;
+}

@@ -28,21 +28,21 @@ const features = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="relative py-20 overflow-hidden bg-white">
+    <section className="relative py-20 overflow-hidden bg-black">
       {/* Wave Decorative Background (Top) */}
-      <div className="absolute top-0 left-0 w-full leading-none z-0">
+      {/* <div className="absolute top-0 left-0 w-full leading-none z-0">
         <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="fill-emerald-50 h-32 w-full opacity-50">
           <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
         </svg>
-      </div>
+      </div> */}
 
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="font-serif text-4xl md:text-5xl text-gray-800">
-            Why <span className="text-emerald-600">Choose</span> Us
+          <h2 className="font-serif text-4xl md:text-5xl text-white">
+            Why <span className="text-[#6E9F3A]">Choose</span> Us
           </h2>
           <div className="mt-4 flex justify-center">
-             <Leaf className="text-emerald-500 opacity-30" size={40} />
+             <Leaf className="text-[#6E9F3A]" size={40} />
           </div>
         </div>
 

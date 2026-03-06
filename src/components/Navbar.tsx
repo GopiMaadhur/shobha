@@ -1,55 +1,78 @@
 "use client"
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Menu, X, Phone } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 20)
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   return (
-    <nav className="fixed w-full z-50 top-0 bg-white/80 backdrop-blur-md border-b border-gray-100">
-      <div className="max-w-7xl mx-auto px-6 lg:px-12">
-        <div className="flex justify-between items-center h-20">
+    <nav
+      className={`fixed w-full z-50 top-0 transition-all duration-300 ${
+        scrolled
+      ? "bg-black/50 backdrop-blur-md shadow-lg"
+      : "bg-black/50"
+      }`}
+    >
+      <div className="max-w-8xl mx-auto px-6 lg:px-12 relative">
+        <div className="flex justify-between items-center h-25">
           
-          {/* Logo - Elegant Serif style like Blume
-          <Link href="/" className="font-serif text-2xl tracking-tighter text-black">
-            SHOBHA <span className="font-light italic text-gray-500">BEAUTY</span>
-          </Link> */}
-
-          <Link href="/">
-            <Image src="/logo.jpeg" alt="Shobha Beauty" width={190} height={40} className="object-contain" />
+          {/* Logo */}
+          <Link href="/" className="flex items-center">
+            <Image 
+              src="/logo.jpeg" 
+              alt="Shobha Beauty" 
+              width={190} 
+              height={40} 
+              className="object-contain" 
+              priority
+            />
           </Link>
-          
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-10 items-center font-sans text-xs uppercase tracking-widest font-medium">
-            <Link href="/services" className="hover:text-gray-400 transition">Services</Link>
-            <Link href="/gallery" className="hover:text-gray-400 transition">Gallery</Link>
-            <Link href="/contact" className="hover:text-gray-400 transition">Contact</Link>
-            <Link href="/BookingForm" className="bg-black text-white px-6 py-3 hover:bg-gray-800 transition">
+          <div className="hidden md:flex space-x-10 items-center font-sans text-sm uppercase tracking-widest font-medium text-white">
+            <Link href="/services" className="hover:text-olive-500 transition">Services</Link>
+            <Link href="/gallery" className="hover:text-olive-500 transition">Gallery</Link>
+            <Link href="/contact" className="hover:text-olive-500 transition">Contact</Link>
+            <Link href="/BookingForm" className="bg-[#6E9F3A] text-white px-6 py-3 rounded-lg hover:bg-[#6B8E23] transition">
               Book Now
             </Link>
           </div>
 
           {/* Mobile Toggle */}
           <div className="md:hidden flex items-center">
-            <button onClick={() => setIsOpen(!isOpen)}>
-              {isOpen ? <X size={24} /> : <Menu size={24} />}
+            <button onClick={() => setIsOpen(!isOpen)} aria-label="Toggle Menu">
+              {isOpen ? <X size={24} className="text-gray-800"/> : <Menu size={24} className="text-gray-800"/>}
             </button>
           </div>
         </div>
-      </div>
 
-      {/* Mobile Menu Slide-down */}
-      {isOpen && (
-        <div className="md:hidden bg-white absolute w-full border-b border-gray-100 p-6 flex flex-col space-y-6 font-sans text-sm uppercase tracking-widest">
-          <Link href="/services" onClick={() => setIsOpen(false)}>Services</Link>
-          <Link href="/gallery" onClick={() => setIsOpen(false)}>Gallery</Link>
-          <Link href="/contact" onClick={() => setIsOpen(false)}>Contact</Link>
-          <Link href="/BookingForm" className="bg-black text-white w-full py-4 block text-center">Book Now</Link>
+        {/* Mobile Menu */}
+        <div 
+          className={`md:hidden absolute top-full left-0 w-full bg-purple-50 shadow-md overflow-hidden transition-all duration-300 ${
+            isOpen ? 'max-h-[500px] p-6 flex flex-col space-y-6' : 'max-h-0 p-0'
+          } font-sans text-sm uppercase tracking-widest`}
+        >
+          <Link href="/services" onClick={() => setIsOpen(false)} className="text-purple-800 hover:text-purple-500">Services</Link>
+          <Link href="/gallery" onClick={() => setIsOpen(false)} className="text-purple-800 hover:text-purple-500">Gallery</Link>
+          <Link href="/contact" onClick={() => setIsOpen(false)} className="text-purple-800 hover:text-purple-500">Contact</Link>
+          <Link 
+            href="/BookingForm" 
+            onClick={() => setIsOpen(false)}
+            className="bg-purple-600 text-white w-full py-4 block text-center rounded-lg hover:bg-purple-700 transition"
+          >
+            Book Noww
+          </Link>
         </div>
-      )}
+      </div>
     </nav>
   )
 }
