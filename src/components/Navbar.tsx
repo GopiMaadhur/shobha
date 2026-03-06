@@ -39,9 +39,11 @@ export default function Navbar() {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-10 items-center font-sans text-sm uppercase tracking-widest font-medium text-white">
-            <Link href="/services" className="hover:text-olive-500 transition">Services</Link>
-            <Link href="/gallery" className="hover:text-olive-500 transition">Gallery</Link>
-            <Link href="/contact" className="hover:text-olive-500 transition">Contact</Link>
+            <Link href="/" className="nav-link">Home</Link>
+            <Link href="/services" className="nav-link">Services</Link>
+            <Link href="/menu" className="nav-link">Menu</Link> 
+            <Link href="/gallery" className="nav-link">Gallery</Link>
+            <Link href="/contact" className="nav-link">Contact</Link>
             <Link href="/BookingForm" className="bg-[#6E9F3A] text-white px-6 py-3 rounded-lg hover:bg-[#6B8E23] transition">
               Book Now
             </Link>
@@ -56,21 +58,17 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Menu */}
-        <div 
-          className={`md:hidden absolute top-full left-0 w-full bg-purple-50 shadow-md overflow-hidden transition-all duration-300 ${
-            isOpen ? 'max-h-[500px] p-6 flex flex-col space-y-6' : 'max-h-0 p-0'
-          } font-sans text-sm uppercase tracking-widest`}
+        <div
+          className={`md:hidden absolute top-full left-0 w-full bg-black shadow-lg overflow-hidden transition-all duration-300 ${
+            isOpen ? "max-h-[500px] p-6 flex flex-col space-y-6" : "max-h-0 p-0"
+          } font-sans text-sm uppercase tracking-widest text-white`}
         >
-          <Link href="/services" onClick={() => setIsOpen(false)} className="text-purple-800 hover:text-purple-500">Services</Link>
-          <Link href="/gallery" onClick={() => setIsOpen(false)} className="text-purple-800 hover:text-purple-500">Gallery</Link>
-          <Link href="/contact" onClick={() => setIsOpen(false)} className="text-purple-800 hover:text-purple-500">Contact</Link>
-          <Link 
-            href="/BookingForm" 
-            onClick={() => setIsOpen(false)}
-            className="bg-purple-600 text-white w-full py-4 block text-center rounded-lg hover:bg-purple-700 transition"
-          >
-            Book Noww
-          </Link>
+          <Link href="/" onClick={() => setIsOpen(false)} className="nav-link">Home</Link>
+          <Link href="/services" onClick={() => setIsOpen(false)} className="nav-link">Services</Link>
+          <Link href="/menu" onClick={() => setIsOpen(false)} className="nav-link">Menu</Link>
+          <Link href="/gallery" onClick={() => setIsOpen(false)} className="nav-link">Gallery</Link>
+          <Link href="/contact" onClick={() => setIsOpen(false)} className="nav-link">Contact</Link>
+          <Link href="/BookingForm" onClick={() => setIsOpen(false)} className="bg-[#6E9F3A] text-white px-6 py-3 rounded-lg text-center hover:bg-[#6B8E23] transition">Book Now</Link>
         </div>
       </div>
     </nav>

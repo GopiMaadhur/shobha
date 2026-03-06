@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
+import Button from './ui/Button';
 
 export default function Footer() {
   return (
@@ -92,9 +93,11 @@ export default function Footer() {
             </ul>
 
             {/* CTA */}
-            <button className="mt-6 bg-[#6E9F3A] text-white px-6 py-2 rounded-lg hover:bg-[#6B8E23] transition">
+            {/* <button className="mt-6 bg-[#6E9F3A] text-white px-6 py-2 rounded-lg hover:bg-[#6B8E23] transition">
               Book Appointment
-            </button>
+            </button> */}
+
+            <Button className="mt-6">Book Appointment</Button>
 
           </div>
 

@@ -7,6 +7,25 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  /* Primary brand color */
+  --color-primary: #6FA43A;
+  --color-primary-hover: #6B8E23;
+  --color-primary-hover1: #4a752a;
+
+  /* Secondary color */
+  --color-secondary: #1F2937;
+
+  /* Backgrounds */
+  --color-bg: #000000;
+  --color-bg-soft: #111111;
+
+  /* Text colors */
+  --color-text: #ffffff;
+  --color-text-muted: #9CA3AF;
+
+  /* Accent */
+  --color-accent: #d4a373;
 }
 
 @theme inline {
@@ -29,6 +48,26 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Navigation Links */
+.nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: var(--color-primary);
+  transition: width 0.35s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
 
 /* White navigation arrows */
 
@@ -51,7 +90,7 @@ body {
 /* Active slide indicator */
 
 .swiper-pagination-bullet-active {
-  background: #c69c6d !important;
+  background: var(--color-primary) !important;
 }
 
 /* Custom rect bullets */
@@ -61,5 +100,5 @@ body {
 }
 
 .swiper-pagination-bullet-active.swiper-rect {
-  background: #c69c6d !important;
+  background: var(--color-primary) !important;
 }

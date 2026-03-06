@@ -6,6 +6,7 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import Button from "./ui/Button";
 
 const services = [
   {
@@ -45,7 +46,7 @@ export default function ServiceSlider() {
       <div className="max-w-7xl mx-auto px-6 text-center">
 
         {/* Title */}
-        <p className="text-[#d4a373] tracking-widest text-sm uppercase">
+        <p className="text-[var(--color-primary)] tracking-widest text-sm uppercase">
           Our Service
         </p>
 
@@ -115,9 +116,10 @@ export default function ServiceSlider() {
         <div className="custom-pagination flex justify-center mt-10"></div>
 
         {/* Button */}
-        <button className="mt-12 bg-[#c69c6d] text-black px-8 py-3 tracking-widest text-sm">
+        {/* <button className="mt-12 bg-[#c69c6d] text-black px-8 py-3 tracking-widest text-sm">
           LEARN MORE
-        </button>
+        </button> */}
+        <Button className="mt-12 px-8 py-3 tracking-widest text-sm">Learn More</Button>
 
       </div>
     </section>

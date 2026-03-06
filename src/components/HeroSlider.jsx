@@ -5,6 +5,7 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import Button from "@/components/ui/Button";
 
 export default function HeroSlider() {
   return (
@@ -41,13 +42,17 @@ export default function HeroSlider() {
                     </h1>
 
                       <div className="flex gap-4">
-                        <button className="px-6 py-3 rounded-md bg-emerald-700 hover:bg-emerald-800 transition-all duration-300 shadow-lg">
+                        {/* <button className="px-6 py-3 rounded-md bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover1)] transition-all duration-300 shadow-lg">
                           Book Appointment
-                        </button>
+                        </button> */}
 
-                        <button className="px-6 py-3 rounded-md bg-orange-500 hover:bg-orange-600 transition-all duration-300 shadow-lg">
+                          <Button>
+                          Book Appointment
+                          </Button>
+
+                        <Button variant="text">
                           Know More
-                        </button>
+                        </Button>
                       </div>
                   </div>
           </div>
@@ -72,13 +77,9 @@ export default function HeroSlider() {
               </h1>
 
               <div className="flex gap-4">
-                <button className="px-6 py-3 rounded-md bg-emerald-700 hover:bg-emerald-800 transition-all duration-300 shadow-lg">
-                  Explore Services
-                </button>
+                <Button>Explore Services</Button>
 
-                <button className="px-6 py-3 rounded-md bg-orange-500 hover:bg-orange-600 transition-all duration-300 shadow-lg">
-                  Contact Us
-                </button>
+                <Button variant="text">Contact Us</Button>
               </div>
             </div>
           </div>
