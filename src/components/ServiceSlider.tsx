@@ -119,7 +119,7 @@ export default function ServiceSlider() {
         {/* <button className="mt-12 bg-[#c69c6d] text-black px-8 py-3 tracking-widest text-sm">
           LEARN MORE
         </button> */}
-        <Button className="mt-12 px-8 py-3 tracking-widest text-sm">Learn More</Button>
+        <Button className="mt-12 px-8 py-3 tracking-widest">Learn More</Button>
 
       </div>
     </section>

@@ -18,8 +18,8 @@ export default function Navbar() {
     <nav
       className={`fixed w-full z-50 top-0 transition-all duration-300 ${
         scrolled
-      ? "bg-black/50 backdrop-blur-md shadow-lg"
-      : "bg-black/50"
+      ? "bg-black/60  shadow-lg"
+      : "bg-black/60"
       }`}
     >
       <div className="max-w-8xl mx-auto px-6 lg:px-12 relative">
@@ -42,9 +42,9 @@ export default function Navbar() {
             <Link href="/" className="nav-link">Home</Link>
             <Link href="/services" className="nav-link">Services</Link>
             <Link href="/menu" className="nav-link">Menu</Link> 
-            <Link href="/gallery" className="nav-link">Gallery</Link>
-            <Link href="/contact" className="nav-link">Contact</Link>
-            <Link href="/BookingForm" className="bg-[#6E9F3A] text-white px-6 py-3 rounded-lg hover:bg-[#6B8E23] transition">
+            <Link href="/" className="nav-link">Gallery</Link>
+            <Link href="/" className="nav-link">Contact</Link>
+            <Link href="/" className="bg-[#6E9F3A] text-white px-6 py-3 rounded-lg hover:bg-[#6B8E23] transition">
               Book Now
             </Link>
           </div>

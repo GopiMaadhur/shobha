@@ -19,10 +19,10 @@ export default function Button({
 
   const variants = {
     primary:
-      "bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover1)] text-white",
+      "bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover1)] tracking-widest text-white",
 
     text:
-      "text-white hover:text-orange-600 bg-transparent shadow-none",
+      "text-white hover:text-orange-600 bg-transparent tracking-widest shadow-none",
   };
 
   return (

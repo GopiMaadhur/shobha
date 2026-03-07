@@ -9,7 +9,7 @@ import Button from "@/components/ui/Button";
 
 export default function HeroSlider() {
   return (
-    <section className="relative w-full h-[90vh] bg-black text-white overflow-hidden">
+    <section className="relative w-full h-[90vh] mt-6 bg-black text-white overflow-hidden">
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         navigation
