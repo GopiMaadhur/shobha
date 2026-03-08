@@ -44,7 +44,7 @@ export default function Navbar() {
             <Link href="/menu" className="nav-link">Menu</Link> 
             <Link href="/" className="nav-link">Gallery</Link>
             <Link href="/" className="nav-link">Contact</Link>
-            <Link href="/" className="bg-[#6E9F3A] text-white px-6 py-3 rounded-lg hover:bg-[#6B8E23] transition">
+            <Link href="/" className="bg-[var(--color-primary)] text-white px-6 py-3 rounded-lg hover:bg-[var(--color-primary-hover)] transition">
               Book Now
             </Link>
           </div>

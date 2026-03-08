@@ -35,7 +35,7 @@
 
 
 import type { Metadata } from "next";
-import { Playfair_Display, Inter } from "next/font/google";
+import { Playfair_Display, Inter, Merriweather_Sans, Gloock } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/Navbar";
 
@@ -51,6 +51,18 @@ const sans = Inter({
   variable: "--font-sans" 
 });
 
+const merriweather = Merriweather_Sans({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-merriweather",
+});
+
+const gloock = Gloock({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-gloock",
+});
+
 export const metadata: Metadata = {
   title: "Shobha Beauty | Luxury Salon Services",
   description: "Experience premium beauty and hair services.",
@@ -63,7 +75,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${serif.variable} ${sans.variable}`}>
+    <html lang="en" className={`${serif.variable} ${sans.variable} ${merriweather.variable} ${gloock.variable}`}>
       <body className="font-sans antialiased bg-[#FAF9F6] text-[#1a1a1a]">
         <Navbar />
         <main className="pt-20">

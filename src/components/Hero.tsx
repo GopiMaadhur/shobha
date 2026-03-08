@@ -14,8 +14,7 @@ export default function Hero() {
           sm:text-4xl 
           md:text-6xl
         ">
-          Discover natural <br className="hidden sm:block" />
-          beauty through <br className="hidden sm:block" />
+          Discover natural beauty through <br className="hidden sm:block" />
           herbal wisdom
         </h1>
 

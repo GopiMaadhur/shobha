@@ -6,6 +6,7 @@ import WhyChooseUs from "@/components/WhyChooseUs";
 import HeroSlider from "@/components/HeroSlider";
 import ServiceSlider from "@/components/ServiceSlider";
 import Footer from "@/components/Footer";
+import WhiteBg from "@/components/WhiteBg";
 
 export default function Home() {
   return (
@@ -13,8 +14,16 @@ export default function Home() {
       
       <HeroSlider />
       <Hero />
+      <WhiteBg
+        title="Nourish Your Beauty the Natural Way"
+        description="Step into a space where beauty is cared for gently and naturally. Our herbal treatments use time tested ingredients that restore balance to your skin and hair without harsh chemicals. From relaxing hair therapies to rejuvenating skin rituals, every experience is designed to help you look and feel your best, naturally."
+        image="/model.png"
+        imagePosition="left"
+        imageClass="scale-150 translate-y-10"
+        buttonText="BOOK NOW"
+      />
       <ServiceSlider />
-      <Cards />
+      
       <WhyChooseUs />
       <Feedback />
       <Footer />
