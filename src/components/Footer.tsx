@@ -17,12 +17,12 @@ export default function Footer() {
             {/* Logo */}
           <Link href="/" className="flex items-center">
             <Image 
-              src="/logo.jpeg" 
+              src="/logo.png" 
               alt="Shobha Beauty" 
               width={190} 
               height={40} 
               className="object-contain" 
-              style={{ marginTop: '-45px' }}
+              style={{ marginTop: '-20px' , marginBottom: '25px' }}
               priority
             />
           </Link>

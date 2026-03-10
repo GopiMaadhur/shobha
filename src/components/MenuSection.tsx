@@ -12,7 +12,8 @@ export default function MenuSection({ title, items }: SectionProps) {
   return (
     <div className="mb-10">
       <h3 className="text-2xl font-semibold text-[var(--color-primary)] mb-4 uppercase tracking-wider"
-        style={{ textShadow: "2px 8px 20px rgba(0, 0, 0, 0.92)" }}>
+        // style={{ textShadow: "2px 8px 20px rgba(0, 0, 0, 0.92)" }}
+        >
         {title}
       </h3>
 
