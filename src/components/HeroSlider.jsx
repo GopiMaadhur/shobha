@@ -46,11 +46,11 @@ export default function HeroSlider() {
                           Book Appointment
                         </button> */}
 
-                          <Button>
+                          <Button href="/contact">
                           Book Appointment
                           </Button>
 
-                        <Button variant="text">
+                        <Button  href="/services" variant="text">
                           Know More
                         </Button>
                       </div>
@@ -77,9 +77,9 @@ export default function HeroSlider() {
               </h1>
 
               <div className="flex gap-4">
-                <Button>Explore Services</Button>
+                <Button href="/services">Explore Services</Button>
 
-                <Button variant="text">Contact Us</Button>
+                <Button href="/contact" variant="text">Contact Us</Button>
               </div>
             </div>
           </div>

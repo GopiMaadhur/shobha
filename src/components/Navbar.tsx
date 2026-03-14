@@ -42,9 +42,9 @@ export default function Navbar() {
             <Link href="/" className="nav-link">Home</Link>
             <Link href="/services" className="nav-link">Services</Link>
             <Link href="/menu" className="nav-link">Menu</Link> 
-            <Link href="/" className="nav-link">Gallery</Link>
-            <Link href="/" className="nav-link">Contact</Link>
-            <Link href="/" className="bg-[var(--color-primary)] text-white px-6 py-3 rounded-lg hover:bg-[var(--color-primary-hover)] transition">
+            <Link href="/gallery" className="nav-link">Gallery</Link>
+            <Link href="/contact" className="nav-link">Contact</Link>
+            <Link href="/contact" className="bg-[var(--color-primary)] text-white px-6 py-3 rounded-lg hover:bg-[var(--color-primary-hover)] transition">
               Book Now
             </Link>
           </div>
@@ -68,7 +68,7 @@ export default function Navbar() {
           <Link href="/menu" onClick={() => setIsOpen(false)} className="nav-link">Menu</Link>
           <Link href="/gallery" onClick={() => setIsOpen(false)} className="nav-link">Gallery</Link>
           <Link href="/contact" onClick={() => setIsOpen(false)} className="nav-link">Contact</Link>
-          <Link href="/BookingForm" onClick={() => setIsOpen(false)} className="bg-[#6E9F3A] text-white px-6 py-3 rounded-lg text-center hover:bg-[#6B8E23] transition">Book Now</Link>
+          <Link href="/contact" onClick={() => setIsOpen(false)} className="bg-[#6E9F3A] text-white px-6 py-3 rounded-lg text-center hover:bg-[#6B8E23] transition">Book Now</Link>
         </div>
       </div>
     </nav>

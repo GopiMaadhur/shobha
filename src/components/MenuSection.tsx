@@ -17,21 +17,25 @@ export default function MenuSection({ title, items }: SectionProps) {
         {title}
       </h3>
 
-      <div className="space-y-3">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-2 pl-20">
         {items.map((item, i) => (
           <div key={i} className="flex items-center text-sm text-white">
             
+            <span className="w-1.5 h-1.5 rounded-full bg-white mr-2 flex-shrink-0" />
             <span className="whitespace-nowrap">{item.name}</span>
+            
 
-            <div className="flex-1 border-b border-dashed border-[var(--color-primary)] mx-4"></div>
+            {/* <div className="flex-1 border-b border-dashed border-[var(--color-primary)] mx-4"></div> */}
 
-            <span className="whitespace-nowrap text-white">
+            {/* <span className="whitespace-nowrap text-white">
               {item.price}
-            </span>
+            </span> */}
 
           </div>
         ))}
       </div>
     </div>
+
+    
   )
 }

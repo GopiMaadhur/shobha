@@ -42,7 +42,7 @@ export default function Hero() {
           gap-4 
           justify-center
         ">
-          <Button>
+          <Button href="/contact">
             Book now
           </Button>
 

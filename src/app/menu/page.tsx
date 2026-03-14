@@ -13,7 +13,7 @@ export default function Menu() {
                       backgroundSize: "cover"
                     }}>
       
-      <div className="max-w-5xl mx-auto p-10 bg-black/60 shadow-lg mb-20 ">
+      <div className="max-w-5xl mx-auto p-10 bg-black/80 shadow-lg mb-20 ">
 
         <h1 className="text-3xl font-bold text-white text-center mb-16 uppercase tracking-widest">
           Lounge Menu
@@ -103,7 +103,7 @@ export default function Menu() {
         />
           <div className="max-w-7xl mx-auto px-6 text-center">
 
-                <Button className=" uppercase tracking-widest">
+                <Button href="/contact" className=" uppercase tracking-widest">
                   Book Now</Button>
           </div>
       </div>

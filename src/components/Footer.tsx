@@ -44,25 +44,25 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
 
               <li>
-                <a href="#" className="hover:text-[#6E9F3A] transition">
+                <a href="/services" className="hover:text-[#6E9F3A] transition">
                   Services
                 </a>
               </li>
 
               <li>
-                <a href="#" className="hover:text-[#6E9F3A] transition">
+                <a href="/Menu" className="hover:text-[#6E9F3A] transition">
+                  Menu
+                </a>
+              </li>
+
+              <li>
+                <a href="/gallery" className="hover:text-[#6E9F3A] transition">
                   Gallery
                 </a>
               </li>
 
               <li>
-                <a href="#" className="hover:text-[#6E9F3A] transition">
-                  Academy
-                </a>
-              </li>
-
-              <li>
-                <a href="#" className="hover:text-[#6E9F3A] transition">
+                <a href="/contact" className="hover:text-[#6E9F3A] transition">
                   Contact
                 </a>
               </li>
@@ -83,11 +83,11 @@ export default function Footer() {
               </li>
 
               <li>
-                +91 XXXXX XXXXX
+                +91 9731 920 789
               </li>
 
               <li>
-                info@shobhabeauty.com
+                shobhaparlour2110@gmail.com
               </li>
 
             </ul>
@@ -97,26 +97,32 @@ export default function Footer() {
               Book Appointment
             </button> */}
 
-            <Button className="mt-6">Book Appointment</Button>
+            <Button  className="mt-6">Book Appointment</Button>
 
           </div>
 
         </div>
 
         {/* Divider */}
+        
         <div className="border-t border-gray-800 mt-14 pt-6 flex flex-col md:flex-row justify-between text-sm text-gray-500">
+              <p>
+            Powered by <a href="https://www.delbric.com" className="hover:text-white"> Delbric Systems</a>
+          </p>
 
           <p>
             © {new Date().getFullYear()} Shobha Herbal Beauty. All rights reserved.
           </p>
+          
 
           <div className="flex gap-6 mt-3 md:mt-0">
-            <a href="#" className="hover:text-white">Privacy</a>
-            <a href="#" className="hover:text-white">Terms</a>
+            <a href="/privacy" className="hover:text-white">Privacy</a>
+            <a href="/terms" className="hover:text-white">Terms</a>
           </div>
 
         </div>
 
+            
       </div>
     </footer>
   );
